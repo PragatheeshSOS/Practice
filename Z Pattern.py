@@ -6,7 +6,7 @@ for i in range(size):
         #     print("*",end="")
         # else:
         #     print(" ",end="")
-        print("*",end=" ") if i == 0 or j == size-1 or j == size-i-1 else print(" ",end=" ")
+        print("*",end=" ") if i == 0 or i == size-1 or j == size-i-1 else print(" ",end=" ")
     print()
 '''
 INPUT - 10

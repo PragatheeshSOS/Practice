@@ -1,17 +1,11 @@
 #Diamond Surrounded By Stars..............
 size,lis = int(input()),[]
 for i in range(size):
-    string = ""
-    for j in range(size):
-        if j <= size-i-1:
-            string+="*"
-        else:
-            string+=" "
-    res = string+" "+string[::-1]
-    print(res)
-    lis.append(res)
+    stars = (str("*")*(size-i))+(str(" ")*(((i+1)*2)-1))+(str("*")*(size-i))
+    print(stars)
+    lis.append(stars)
 for i in lis[::-1]:
-    print(i)
+    print(*i,sep="")
 '''
 INPUT:
 5

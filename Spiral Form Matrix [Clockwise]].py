@@ -1,4 +1,5 @@
-#Spiral Form Matrix..........
+#Spiral Form Matrix Clockwise Rotation [RDLU]..........
+#Starts From Left To Right. Right To Down. Dowm To Left. Left To Up.
 size1,size2 = int(input()),int(input())
 lis = [list(map(int, input().split())) for _ in range(size1)]
 count,top,right,bottom,left = size1*size2,0,size2-1,size1-1,0

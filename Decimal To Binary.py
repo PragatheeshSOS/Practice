@@ -6,8 +6,7 @@ def DeBi(number):
         result.insert(0,number%2)
         number//=2
     return result
-number = int(input())
-print(*DeBi(number),sep="")
+print(*DeBi(int(input())),sep="")
 
 #Approach 2...........
 def d2b(number):
@@ -17,8 +16,7 @@ def d2b(number):
         number//=2
         power*=10
     return result
-number = int(input())
-print(d2b(number))
+print(d2b(int(input())))
 '''
 INPUT:
 10

@@ -1,4 +1,8 @@
 #LINEAR SEARCH............
+'''
+Time Complexity = O(n)
+Space Complexity = O(1)
+'''
 #Approach 1.............
 def linear_search(lis,target):
     for i in range(len(lis)):

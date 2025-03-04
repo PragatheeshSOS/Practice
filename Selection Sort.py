@@ -1,4 +1,8 @@
 #SELECTION SORT...............
+'''
+Time Complexity = O(n**2)
+Space Complexity = O(1)
+'''
 def selectionsort(lis):
     for i in range(len(lis)-1):
         mini = i

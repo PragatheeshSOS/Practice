@@ -1,4 +1,5 @@
 # Batsman Problem (Score Prediction)............
+![1.Batsman Problem](https://github.com/user-attachments/assets/b8823ec5-f7f4-453b-9815-686fa86511e7)
 string = input()
 if len(string) != 6 or any(i not in "1234567890Y." for i in string):
     print("Invalid")

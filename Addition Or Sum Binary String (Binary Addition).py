@@ -1,4 +1,5 @@
 # Manual Sum Of Binary String.......
+![Alt txt] (https://github.com/user-attachments/assets/321ce069-48ba-4f94-84f4-73e152d7c719)
 number1,number2 = input(),input()
 number1,number2 = number1.zfill(max(len(number1),len(number2))),number2.zfill(max(len(number1),len(number2)))
 carry,res = 0,[]

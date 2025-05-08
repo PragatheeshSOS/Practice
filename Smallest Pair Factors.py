@@ -1,5 +1,5 @@
 #Smallest Pair Factors........................
-# QUESTION.............
+# QUESTION............. (Referance -> https://www.perplexity.ai/search/import-math-def-min-sum-of-pai-LdtDSZ1tQTGTXezhDAZUxA
 # You are given an integer N denoting whose pair factors are A and B. You have to find the minimum value of A+B for any integer A and B.
 # Example:
 # N=96

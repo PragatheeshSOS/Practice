@@ -7,15 +7,15 @@ for _ in range(edges):
     key,value = map(int,input("Enter Node And Its Neighbour Separated By Space: ").split())
     dic[key].append(value)
     dic[value].append(key)
-queue = [int(input("Enter Starting Node: "))]
+stack = [int(input("Enter Starting Node: "))]
 print("\n-------- DFS OUTPUT --------")
-while queue:
-    pop = queue.pop()
+while stack:
+    pop = stack.pop()
     if pop not in visited:
         print(pop,end=" ")
         visited.append(pop)
-        queue.extend(reversed(dic[pop]))
-        queue.extend(reversed(dic[pop]))
+        stack.extend(reversed(dic[pop]))
+        stack.extend(reversed(dic[pop]))
 '''
 Enter Number Of Node And Number Of Edges Separated By Space: 6 5
 Enter Node And Its Neighbour Separated By Space: 1 2

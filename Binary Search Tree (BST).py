@@ -103,9 +103,22 @@ class BST:
         self.postorder(traveler.left)
         self.postorder(traveler.right)
         print(traveler.value,end=" ")
+    def levelorder(self,traveler):
+        if self.root is None:
+            print("\n\nTree Is Empty..!")
+            return
+        else:
+            queue = [self.root]
+            while queue:
+                traveler = queue.pop(0)
+                print(traveler.value,end=" ")
+                if traveler.left:
+                    queue.append(traveler.left)
+                if traveler.right:
+                    queue.append(traveler.right)
 bstree = BST()
 while True:
-    print("\n\n\n--------- Binary Search Tree ---------\n1) Insertion\n2) Deletion\n3) Search\n4) LCA\n5) Height Of BST\n6) Minimum And Maximum\n7) Pre-order Traversal\n8) In-order Traversal\n9) Post-order Traversal\n0) Exit\n")
+    print("\n\n\n--------- Binary Search Tree ---------\n1) Insertion\n2) Deletion\n3) Search\n4) LCA\n5) Height Of BST\n6) Minimum And Maximum\n7) Pre-order Traversal\n8) In-order Traversal\n9) Post-order Traversal\n10) Level-order Traversal\n0) Exit\n")
     action = int(input("Enter Number To Take Action: "))
     if action == 1:
         bstree.insert(int(input("Enter Value To Be Inserted: ")),bstree.root)
@@ -132,6 +145,9 @@ while True:
     elif action == 9:
         print("\n\n--------- Post-order Traversal ---------")
         bstree.postorder(bstree.root)
+    elif action == 10:
+        print("\n\n--------- Level-order Traversal ---------")
+        bstree.levelorder(bstree.root)
     elif action == 0:
         print("Exiting..!")
         exit()
@@ -448,5 +464,140 @@ Search Element Exists..!
 0) Exit
 
 Enter Number To Take Action: 0
+Exiting..!
+'''
+
+# Level Order Traversal Function Added............
+'''
+
+--------- Binary Search Tree ---------
+1) Insertion
+2) Deletion
+3) Search
+4) LCA
+5) Height Of BST
+6) Minimum And Maximum
+7) Pre-order Traversal
+8) In-order Traversal
+9) Post-order Traversal
+10) Level-order Traversal
+0) Exit
+
+Enter Number To Take Action: 
+10
+
+
+--------- Level-order Traversal ---------
+
+
+Tree Is Empty..!
+
+
+
+--------- Binary Search Tree ---------
+1) Insertion
+2) Deletion
+3) Search
+4) LCA
+5) Height Of BST
+6) Minimum And Maximum
+7) Pre-order Traversal
+8) In-order Traversal
+9) Post-order Traversal
+10) Level-order Traversal
+0) Exit
+
+Enter Number To Take Action: 
+1
+Enter Value To Be Inserted: 
+10
+
+
+Element Inserted Successfully..!
+
+
+
+--------- Binary Search Tree ---------
+1) Insertion
+2) Deletion
+3) Search
+4) LCA
+5) Height Of BST
+6) Minimum And Maximum
+7) Pre-order Traversal
+8) In-order Traversal
+9) Post-order Traversal
+10) Level-order Traversal
+0) Exit
+
+Enter Number To Take Action: 
+1
+Enter Value To Be Inserted: 
+5
+
+
+Element Inserted Successfully..!
+
+
+
+--------- Binary Search Tree ---------
+1) Insertion
+2) Deletion
+3) Search
+4) LCA
+5) Height Of BST
+6) Minimum And Maximum
+7) Pre-order Traversal
+8) In-order Traversal
+9) Post-order Traversal
+10) Level-order Traversal
+0) Exit
+
+Enter Number To Take Action: 
+1
+Enter Value To Be Inserted: 
+15
+
+
+Element Inserted Successfully..!
+
+
+
+--------- Binary Search Tree ---------
+1) Insertion
+2) Deletion
+3) Search
+4) LCA
+5) Height Of BST
+6) Minimum And Maximum
+7) Pre-order Traversal
+8) In-order Traversal
+9) Post-order Traversal
+10) Level-order Traversal
+0) Exit
+
+Enter Number To Take Action: 
+10
+
+
+--------- Level-order Traversal ---------
+10 5 15 
+
+
+--------- Binary Search Tree ---------
+1) Insertion
+2) Deletion
+3) Search
+4) LCA
+5) Height Of BST
+6) Minimum And Maximum
+7) Pre-order Traversal
+8) In-order Traversal
+9) Post-order Traversal
+10) Level-order Traversal
+0) Exit
+
+Enter Number To Take Action: 
+0
 Exiting..!
 '''

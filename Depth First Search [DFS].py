@@ -15,7 +15,6 @@ while stack:
         print(pop,end=" ")
         visited.append(pop)
         stack.extend(reversed(dic[pop]))
-        stack.extend(reversed(dic[pop]))
 '''
 Enter Number Of Node And Number Of Edges Separated By Space: 6 5
 Enter Node And Its Neighbour Separated By Space: 1 2

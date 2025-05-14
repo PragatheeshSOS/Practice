@@ -101,8 +101,14 @@ class AVL:
         self.postorder(root.right)
         print(root.value,end=" ")
     def levelorder(self,root):
-        #Works .....................................................................................
-        pass
+        queue = [root]
+        while queue:
+            node = queue.pop(0)
+            print(node.value, end=' ')
+            if node.left:
+                queue.append(node.left)
+            if node.right:
+                queue.append(node.right)
 avl = AVL()
 while True:
     print("\n\n-------- AVL Tree --------")
@@ -115,6 +121,7 @@ while True:
     print("7) Pre-order Traversal")
     print("8) In-order Traversal")
     print("9) Post-order Traversal")
+    print("10) Level-Order Traversal")
     print("0) Exit")
     action = int(input("Enter Action: "))
     if action == 1:

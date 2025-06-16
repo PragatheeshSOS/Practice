@@ -2,6 +2,18 @@
 import numpy as np
 size1,size2 = int(input()),int(input())
 print(f"Determinant of the matrix ={int(round(np.linalg.det(np.array([list(map(int,input().split())) for _ in range(size1)]))))}")
+
+# Approach 2.................................
+size1,size2 = int(input()),int(input())
+if size1 == size2 == 2:
+    one,two = map(int,input().split())
+    three,four = map(int,input().split())
+    print(f"Determinant of the matrix ={(one*four)-(two*three)}")
+else:
+    a,b,c = map(int,input().split())
+    d,e,f = map(int,input().split())
+    g,h,i = map(int,input().split())
+    print(f"Determinant of the matrix ={(a*((e*i)-(f*h)))-(b*((d*i)-(f*g)))+(c*((d*h)-(e*g)))}")
 '''
 INPUT:
 2
